@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.almosky.almoskylaundry">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:name="com.almosky.almoskylaundry.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:replace="android:icon,android:theme">
+        <activity android:name="com.almosky.almoskylaundry.SplashScreenActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAQWUVID86-A6c2wiDr2jtgBNFj-oEaMnI" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name="com.almosky.almoskylaundry.TabHostActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.payment.PaymentActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.almosky.almoskylaundry.activity.PickUpActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.almosky.almoskylaundry.activity.DeliveryActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.almosky.almoskylaundry.activity.AddAddressActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.almosky.almoskylaundry.activity.SignupOrLoginActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.almosky.almoskylaundry.activity.AddressListActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.almosky.almoskylaundry.activity.neworder.OrdertypeActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.almosky.almoskylaundry.activity.neworder.CategoryListActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.almosky.almoskylaundry.activity.neworder.ItemDetailsAddActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.almosky.almoskylaundry.activity.neworder.MyBasketActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.almosky.almoskylaundry.activity.OrderConfirmationActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.almosky.almoskylaundry.activity.OrderDetailsActivity1"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.almosky.almoskylaundry.activity.neworder.AreaListActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.almosky.almoskylaundry.activity.ContactUsActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.almosky.almoskylaundry.activity.TermsActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.almosky.almoskylaundry.activity.AboutUsActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.almosky.almoskylaundry.activity.EditAddressActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.OrderDetailsActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.ForgotPasswordActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activity.UpdateProfileActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.payment.PaymentViewActivity"
+            android:screenOrientation="portrait"/>
+
+      <!--  <service android:name=".notification.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>  -->
+        <service android:name=".notification.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".notification.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+
+
+        <service
+            android:name=".notification.MyJobService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.firebase.jobdispatcher.ACTION_EXECUTE" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>
