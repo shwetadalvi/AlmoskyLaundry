@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.almosky.almoskylaundry.helper.ProgressConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.almosky.almoskylaundryApp.helper.ProgressConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@id/progressLayout"
     android:layout_width="fill_parent"
@@ -112,4 +112,4 @@
               android:visibility="gone"/>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
-</com.almosky.almoskylaundry.helper.ProgressConstraintLayout>
+</com.almosky.almoskylaundryApp.helper.ProgressConstraintLayout>

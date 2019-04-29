@@ -7,7 +7,7 @@
 
         <variable
             name="model"
-            type="com.almosky.almoskylaundry.model.MainModel" />
+            type="com.almosky.almoskylaundryApp.model.MainModel" />
     </data>
 
     <RelativeLayout

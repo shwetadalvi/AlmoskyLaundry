@@ -9,7 +9,7 @@
     android:scrollbarStyle="outsideInset"
     android:scrollbarThumbVertical="@color/colorDivider">
 
-    <com.almosky.almoskylaundry.helper.ProgressLinearLayout
+    <com.almosky.almoskylaundryApp.helper.ProgressLinearLayout
         android:id="@+id/progress_layout"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -77,5 +77,5 @@
             android:layout_height="wrap_content"
             android:backgroundTint="@color/colorPrimaryDark"
             android:text="@string/btn_login_page" />
-    </com.almosky.almoskylaundry.helper.ProgressLinearLayout>
+    </com.almosky.almoskylaundryApp.helper.ProgressLinearLayout>
 </ScrollView>

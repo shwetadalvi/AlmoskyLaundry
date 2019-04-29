@@ -7,7 +7,7 @@
 
         <variable
             name="model"
-            type="com.almosky.almoskylaundry.model.MyBasketModel" />
+            type="com.almosky.almoskylaundryApp.model.MyBasketModel" />
     </data>
 
 

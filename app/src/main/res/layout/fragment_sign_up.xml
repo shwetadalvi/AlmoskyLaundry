@@ -15,7 +15,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <com.almosky.almoskylaundry.helper.ProgressLinearLayout
+        <com.almosky.almoskylaundryApp.helper.ProgressLinearLayout
             android:id="@+id/progress_layout"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
@@ -175,7 +175,7 @@
                 android:text="@string/btn_sign_up" />
 
 
-        </com.almosky.almoskylaundry.helper.ProgressLinearLayout>
+        </com.almosky.almoskylaundryApp.helper.ProgressLinearLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/otpContainer"

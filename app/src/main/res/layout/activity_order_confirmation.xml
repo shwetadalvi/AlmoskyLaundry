@@ -7,7 +7,7 @@
 
         <variable
             name="model"
-            type="com.almosky.almoskylaundry.model.OrderConfirmationModel" />
+            type="com.almosky.almoskylaundryApp.model.OrderConfirmationModel" />
     </data>
 
 
